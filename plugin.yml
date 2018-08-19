@@ -1,0 +1,7 @@
+name: SCT_Level
+main: org.SCT.Level.Level
+version: 1.4
+author: ServerCT
+depend: [SCT_Core]
+commands:
+  level:

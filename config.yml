@@ -1,0 +1,55 @@
+#数据库配置
+Mysql:
+  Host: localhost
+  Port: 3306
+  DataBase: mc_nancheng
+  User: root
+  Password: SCTNO.1
+  TableName: SCT_Level
+
+#升级一次加多少血量
+HealthAdd: 1
+
+#等级配置，一行代表一级
+Level:
+  #升级到1级需要100经验
+  - 100
+  #从-升级到2级需要200经验
+  - 200
+  #自己嗨去，无上限
+  - 300
+
+#怪物配置，支持各种怪物插件(是的就是这么任性)
+Mob:
+  #请自觉按照1，2，3，4这样顺序写，否则炸了我不负责
+  1:
+    #怪物种类，请严格按照Bukkit里面的怪物名字大写，瞎几把写出了事情我不负责
+    Type: ZOMBIE
+    #名字，瞎几把写
+    Name: 辣鸡pcd
+    #掉落经验
+    Exp: 100
+
+#血药道具
+HealthItems:
+  #请自觉按照1，2，3，4这样顺序写，否则炸了我不负责
+  1:
+    #从SCT_Item插件里面读取
+    Name: pcdlaji
+    #一次恢复多少血量
+    Health: 6
+
+#等级物品
+LevelItems:
+  #请自觉按照1，2，3，4这样顺序写，否则炸了我不负责
+  1:
+    #从SCT_Item插件里面读取
+    Name: pcdlaji
+    #一次增加多少经验，不增加写0
+    Exp: 10
+    #一次增加多少等级，不增加写0
+    Level: 1
+
+
+
+
